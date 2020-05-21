@@ -25,9 +25,11 @@ class Notification extends Component {
   };
 
   render() {
-    const {notifications} = this.props;
+    const {notifications, display} = this.props;
+    const displayClass = display ? '' : styles.hidden;
+    console.log(displayClass);
     return (
-      <View style={styles.container}>
+      <View style={[styles.container, displayClass]}>
         <View style={styles.container_header}>
           <CustomIcon name={'alert24'} color={'#8F761E'} size={20} />
           <Text style={styles.title}>Local alerts</Text>
@@ -81,6 +83,11 @@ class Notification extends Component {
             );
           }
         })}
+        <View style={styles.footer}>
+          <TouchableOpacity onPress={this.props.handleDisplay}>
+            <Text style={styles.dismiss}>DISMISS</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
@@ -114,9 +121,6 @@ const styles = StyleSheet.create({
     borderTopStartRadius: 20,
     borderTopEndRadius: 20,
   },
-  content_container: {
-    paddingHorizontal: 18,
-  },
   card_title: {
     fontSize: 20,
     lineHeight: 24,
@@ -134,6 +138,29 @@ const styles = StyleSheet.create({
   card_line: {
     fontSize: 14,
     lineHeight: 20,
+  },
+  container_title: {
+    fontSize: 18,
+    lineHeight: 22,
+    color: colors.module_title,
+  },
+  content_container: {
+    paddingHorizontal: 18,
+  },
+  hidden: {
+    display: 'none',
+  },
+  footer: {
+    borderTopWidth: 1,
+    borderTopColor: colors.card_border,
+    paddingVertical: 16,
+    alignItems: 'center',
+  },
+  dismiss: {
+    fontSize: 15,
+    lineHeight: 20,
+    letterSpacing: -0.24,
+    color: colors.secondary_body_copy,
   },
 });
 

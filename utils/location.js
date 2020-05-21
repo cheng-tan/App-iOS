@@ -4,7 +4,7 @@ import {getLocations} from '../realm/realmLocationTasks';
 const Location = {
   convertToAddress: function(coordinate) {
     console.log("convertToAddress:: " + JSON.stringify(coordinate));
-    return NativeModules.Locations.reverseGeoCode(coordinate)
+    return NativeModules.Locations.reverseGeoCode(coordinate);
   },
   fetchAddresses: async function(dateObj, dayRange = 0) {
     const locations = await getLocations(dateObj, dayRange);
@@ -16,7 +16,8 @@ const Location = {
       return {
         name: location.name,
         address: location.address,
-      }
+        timespan: location.timespan,
+      };
     });
 
     return addresses;

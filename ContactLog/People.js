@@ -12,6 +12,7 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import SelectedContacts from './SelectedContacts';
 import {strings} from '../locales/i18n';
+import data from './static.json';
 
 class People extends Component {
   constructor() {
@@ -67,12 +68,12 @@ class People extends Component {
   };
 
   loadContacts = () => {
-    Contacts.getAllWithoutPhotos((err, contacts) => {
-      if (err) {
-        console.log('getting contact error: ', err);
-        return;
-      }
-
+    // Contacts.getAllWithoutPhotos((err, contacts) => {
+      // if (err) {
+      //   console.log('getting contact error: ', err);
+      //   return;
+      // }
+      const contacts = data.contacts;
       const contactList = contacts.map(contact => {
         return {
           id: contact.recordID,
@@ -84,7 +85,7 @@ class People extends Component {
         field: 'allContacts',
         value: contactList,
       });
-    });
+    // });
   };
 
   openModal = () => {
@@ -160,7 +161,7 @@ const styles = StyleSheet.create({
 });
 
 ContactList.propTypes = {
-  updateContactLog: PropTypes.func.isRequired,
+  updateContactLog: PropTypes.func,
 };
 
 const mapStateToProps = state => {

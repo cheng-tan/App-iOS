@@ -44,7 +44,20 @@ class ContactLog extends Component {
     });
 
     this.setState({
-      markedDates,
+      markedDates: {
+        '2020-05-17': {marked: true},
+        '2020-05-18': {marked: true},
+        '2020-05-19': {marked: true},
+        '2020-05-20': {marked: true},
+        '2020-05-21': {marked: true},
+        '2020-05-22': {marked: true},
+        '2020-05-23': {marked: true},
+        '2020-05-24': {marked: true},
+        '2020-05-25': {marked: true},
+        '2020-05-26': {marked: true},
+        '2020-05-27': {marked: true},
+        '2020-05-28': {marked: true},
+      },
     });
   };
 

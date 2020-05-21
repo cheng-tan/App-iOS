@@ -38,10 +38,14 @@ class Home extends Component {
       location: false,
       enable_notification: false,
       notifications: [],
+      display: true,
+      index: 0,
     };
   }
 
   componentDidMount() {
+    // addLocation(addressesData.locations);
+
     this.processQueries();
     BackgroundFetch.configure(
       {minimumFetchInterval: 15}, // <-- minutes (15 is minimum allowed)
@@ -296,9 +300,7 @@ class Home extends Component {
 
   render() {
     const isBroadcasting = this.state.location;
-    const broadcastStatus = isBroadcasting
-      ? strings('broadcasting.on_text')
-      : strings('broadcasting.off_text');
+    const broadcastStatus = 'Location Logging';
     const broadcastBg = isBroadcasting
       ? styles.broadcast_on
       : styles.broadcast_off;
@@ -334,11 +336,6 @@ class Home extends Component {
                     {isBroadcasting
                       ? strings('global.logging')
                       : strings('global.stopping')}
-                    <Text
-                      style={styles.lear_more_link}
-                      onPress={() => Linking.openURL(UW_URL)}>
-                      {strings('learn.more_link_text')}
-                    </Text>
                   </Text>
                 </View>
               </View>
@@ -353,7 +350,11 @@ class Home extends Component {
           </View>
 
           {this.state.notifications && this.state.notifications.length > 0 && (
-            <Notification notifications={this.state.notifications} />
+            <Notification
+              notifications={this.state.notifications}
+              handleDisplay={this.handleDisplay}
+              display={this.state.display}
+            />
           )}
 
           <SymptomTracker

@@ -3,25 +3,37 @@ import {Alert, Platform, Linking} from 'react-native';
 import {addLocation} from '../realm/realmLocationTasks';
 import Location from '../utils/location';
 import DateConverter from '../utils/date';
+import data from './static.json';
+import addressesData from '../ContactLog/static.json';
 
 let instanceCount = 0;
 
 export default class LocationServices {
   static start() {
-    const saveLocation = async (location) => {
-      const {latitude, longitude} = location;
-      const time = DateConverter.getUTCUnixTime();
+    const saveLocation = () => {
+      console.log(addressesData.locations);
+      addLocation(addressesData.locations);
+      // Location.convertToAddress(data.locations).then(addresses => {
+      //   console.log("===addresses====");
+      //   console.log(addresses);
+      //
+      // });
+      // const {latitude, longitude} = location;
+      // const time = DateConverter.getUTCUnixTime();
 
-      let addressObj = await Location.convertToAddress({latitude, longitude});
-      console.log('converted ' + latitude + ", " + longitude + " to: " +  JSON.stringify(addressObj));
-      if(addressObj)
-        addLocation({
-          latitude,
-          longitude,
-          time,
-          address: addressObj.address,
-          name: addressObj.name,
-        });
+      // Location.convertToAddress({latitude, longitude, time}).then(addresses => {
+      //   const name =
+      //     addresses[0][0] === '' ? 'Unknown Location' : addresses[0][0];
+      //   const addressString = addresses[0][1];
+      //
+      //   addLocation({
+      //     latitude,
+      //     longitude,
+      //     time,
+      //     address: addressString,
+      //     name,
+      //   });
+      // });
     };
 
     instanceCount += 1;
@@ -35,7 +47,7 @@ export default class LocationServices {
       desiredAccuracy: BackgroundGeolocation.MEDIUM_ACCURACY,
       stationaryRadius: 50,
       distanceFilter: 3500,
-      debug: true, // when true, it beeps every time a loc is read
+      debug: false, // when true, it beeps every time a loc is read
       stopOnTerminate: false,
       locationProvider: BackgroundGeolocation.DISTANCE_FILTER_PROVIDER,
 
@@ -60,7 +72,7 @@ export default class LocationServices {
         // execute long running task
         // eg. ajax post location
         // IMPORTANT: task has to be ended by endTask
-        saveLocation(location);
+        saveLocation();
         BackgroundGeolocation.endTask(taskKey);
       });
     });

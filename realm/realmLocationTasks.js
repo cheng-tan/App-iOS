@@ -1,14 +1,17 @@
 import DateConverter from '../utils/date';
 import RealmObj from './realm';
 
-export async function addLocation(location) {
+export async function addLocation(locations) {
   try {
     const realm = await RealmObj.init();
     realm.write(() => {
-      realm.create('Location',
-        {...location, source: 'device', timespan: ''},
-        true,
-      );
+      locations.forEach(location => {
+        console.log("==called==");
+        realm.create('Location',
+          {...location, source: 'device', timespan: location.timespan},
+          true,
+        );
+      });
     });
   } catch (err) {
     console.log('add location to realm error: ', err);

@@ -67,7 +67,11 @@ class Health extends Component {
         </View>
         <Calendar
           current={DateConverter.calendarFormat(symptomsDate)}
-          markedDates={symptomsMarkedDays}
+          markedDates={{
+            '2020-05-19': {marked: true},
+            '2020-05-20': {marked: true},
+            '2020-05-21': {marked: true},
+          }}
           handleDayPress={day => {
             this.props.updateHealthData({
               [`${tabs[tabIdx]}Date`]: DateConverter.calendarToDate(

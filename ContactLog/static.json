@@ -1,61 +1,143 @@
 {
   locations: [
-  {
-    latitude: 40.748440,
-    longitude: -73.985664,
-    time: 1588023884000,
-  },
-  {
-    latitude: 40.742050,
-    longitude: -73.993851,
-    time: 1587980865000,
-  },
-  {
-    latitude: 40.738480,
-    longitude: -73.989929,
-    time: 1587843741483,
-  },
-  {
-    latitude: 40.689247,
-    longitude: -74.044502,
-    time: 1587843806886,
-  },
-  {
-    latitude: 40.7828640,
-    longitude: -73.965355,
-    time: 1588112674000,
-  },
-  {
-    latitude: 40.742050,
-    longitude: -73.993851,
-    time: 1588118321000,
-  }
+    {
+      latitude: 47.615420,
+      longitude: -122.314080,
+      time: 1589706000000,
+      name: "1604 14th Ave",
+      address: "1604 14th Ave, Seattle WA 98122, United States",
+      timespan: "1589745600 - 1589793000",
+    },
+    {
+      latitude: 47.613814,
+      longitude: -122.317106,
+      time: 1589955840000,
+      name: "Plum Bistro",
+      address: "1429 12th Ave, Seattle WA 98122, United States",
+      timespan: "1589955840 - 1590555840",
+    },
+    {
+      latitude: 47.615420,
+      longitude: -122.314080,
+      time: 1589716800000,
+      name: "1604 14th Ave",
+      address: "1604 14th Ave, Seattle WA 98122, United States",
+      timespan: "1589706000 - 1590306000",
+    },
+    {
+      latitude: 47.607646,
+      longitude: -122.303125,
+      time: 1589941680000,
+      name: "665 23rd Ave",
+      address: "665 23rd Ave, Seattle WA 98122, United States",
+      timespan: "1589941680 - 1590541680",
+    },
+    {
+      latitude: 47.65295,
+      longitude: -122.34255,
+      time: 1589919300000,
+      name: "Charlie's Bar",
+      address: "3810 Stone Way N, Seattle WA 98103, United States",
+      timespan: "1589919300 - 1590519300"
+    },
+    {
+      latitude:47.627419,
+      longitude: -122.292290,
+      time: 1589890920000,
+      name: "Cafe Flora",
+      address: "E Ward St, Seattle WA 98112, United States",
+      timespan: "1589890920 - 1590490920",
+    },
+    {
+      latitude: 47.615269,
+      longitude: -122.318138,
+      time: 1589738400000,
+      name: "1110 E Pine St",
+      address: "1110 E Pine St, Seattle WA 98122, United States",
+      timespan: "1589738400 - 1590338400"
+    },
+    {
+      latitude: 47.615269,
+      longitude: -122.318138,
+      time: 1589826840000,
+      name: "1110 E Pine St",
+      address: "1110 E Pine St, Seattle WA 98122, United States",
+      timespan: "1589826840 - 1590426840"
+    },
+    {
+      latitude: 47.615269,
+      longitude: -122.318138,
+      time: 1589860800000,
+      name: "1110 E Pine St",
+      address: "1110 E Pine St, Seattle WA 98122, United States",
+      timespan: "1589860800 - 1590460800"
+    },
+    {
+      latitude: 47.614090,
+      longitude: -122.328407,
+      time: 1589796000000,
+      name: "1124 Pike St",
+      address: "1124 Pike St, Seattle WA 98101, United States",
+      timespan: "1589796000 - 1590396000"
+    },
+    {
+      latitude: 47.616268,
+      longitude: -122.309822,
+      time: 1589711100000,
+      name: "Trader Joe",
+      address: "1700 E Madison St, Seattle WA 98122, United States",
+      timespan: "1589711100 - 1590311100"
+    },
+    {
+      latitude: 47.615269,
+      longitude: -122.318138,
+      time: 1590656400000,
+      name: "1110 E Pine St",
+      address: "1110 E Pine St, Seattle WA 98122, United States",
+      timespan: "1589860800 - 1590460800"
+    },
+    {
+      latitude: 47.614090,
+      longitude: -122.328407,
+      time: 1590670800000,
+      name: "1124 Pike St",
+      address: "1124 Pike St, Seattle WA 98101, United States",
+      timespan: "1589796000 - 1590396000"
+    },
+    {
+      latitude: 47.616268,
+      longitude: -122.309822,
+      time: 1590693788000,
+      name: "Trader Joe",
+      address: "1700 E Madison St, Seattle WA 98122, United States",
+      timespan: "1589711100 - 1590311100"
+    }
   ],
   contacts: [
-  {
-    recordID: "29406806-0403-422C-B7BF-8D18DE7A3BA9",
-    givenName: "Carole",
-    familyName: "Poland"
-  },
-  {
-    recordID: "656521CC-C51B-4589-825D-BF4590CBA112",
-    givenName: "Kat",
-    familyName: "Larsson"
-  },
-  {
-    recordID: "7669827A-4587-4785-9D17-DF293C8E705E",
-    givenName: "Erik",
-    familyName: "Nason"
-  },
-  {
-    recordID: "A1A02647-A2A6-4F1B-B89B-15551056D9D4",
-    givenName: "Kristin",
-    familyName: "Patterson"
-  },
-  {
-    recordID: "D173539E-5C91-47DA-A7C2-32D66BA04714",
-    givenName: "Cameron",
-    familyName: "Evans"
-  },
+    {
+      recordID: "29406806-0403-422C-B7BF-8D18DE7A3BA9",
+      givenName: "Carole",
+      familyName: "Poland"
+    },
+    {
+      recordID: "656521CC-C51B-4589-825D-BF4590CBA112",
+      givenName: "Kat",
+      familyName: "Larsson"
+    },
+    {
+      recordID: "7669827A-4587-4785-9D17-DF293C8E705E",
+      givenName: "Erik",
+      familyName: "Nason"
+    },
+    {
+      recordID: "A1A02647-A2A6-4F1B-B89B-15551056D9D4",
+      givenName: "Kristin",
+      familyName: "Patterson"
+    },
+    {
+      recordID: "D173539E-5C91-47DA-A7C2-32D66BA04714",
+      givenName: "Cameron",
+      familyName: "Evans"
+    },
   ]
 }

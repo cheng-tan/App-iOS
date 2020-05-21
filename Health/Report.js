@@ -67,6 +67,22 @@ const styles = StyleSheet.create({
     margin: 15,
     marginTop: 25,
   },
+  report_title: {
+    fontWeight: '500',
+    fontSize: 16,
+    lineHeight: 24,
+    color: '#212121',
+  },
+  report_description: {
+    fontSize: 14,
+    lineHeight: 18,
+    color: colors.body_copy,
+    paddingVertical: 8,
+  },
+  success_container: {
+    padding: 8,
+    alignItems: 'center',
+  },
 });
 
 export default Report;
