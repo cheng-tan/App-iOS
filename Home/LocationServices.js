@@ -10,9 +10,8 @@ let instanceCount = 0;
 
 export default class LocationServices {
   static start() {
+    addLocation(addressesData.locations);
     const saveLocation = () => {
-      console.log(addressesData.locations);
-      addLocation(addressesData.locations);
       // Location.convertToAddress(data.locations).then(addresses => {
       //   console.log("===addresses====");
       //   console.log(addresses);

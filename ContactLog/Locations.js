@@ -17,7 +17,6 @@ import Location from '../utils/location';
 import {strings, fmt_date} from '../locales/i18n';
 import CustomIcon from '../assets/icons/CustomIcon.js';
 import {deleteLocation} from '../realm/realmLocationTasks';
-import DateConverter from '../utils/date';
 
 class Locations extends Component {
   constructor() {
