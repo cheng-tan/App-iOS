@@ -3,7 +3,7 @@
     {
       latitude: 47.615420,
       longitude: -122.314080,
-      time: 1589706000000,
+      time: 1592916317000,
       name: "1604 14th Ave",
       address: "1604 14th Ave, Seattle WA 98122, United States",
       timespan: "1589745600 - 1589793000",
@@ -11,7 +11,7 @@
     {
       latitude: 47.613814,
       longitude: -122.317106,
-      time: 1589955840000,
+      time: 1592959517000,
       name: "Plum Bistro",
       address: "1429 12th Ave, Seattle WA 98122, United States",
       timespan: "1589955840 - 1590555840",
@@ -19,7 +19,7 @@
     {
       latitude: 47.615420,
       longitude: -122.314080,
-      time: 1589716800000,
+      time: 1593002717000,
       name: "1604 14th Ave",
       address: "1604 14th Ave, Seattle WA 98122, United States",
       timespan: "1589706000 - 1590306000",
@@ -27,7 +27,7 @@
     {
       latitude: 47.607646,
       longitude: -122.303125,
-      time: 1589941680000,
+      time: 1593045917000,
       name: "665 23rd Ave",
       address: "665 23rd Ave, Seattle WA 98122, United States",
       timespan: "1589941680 - 1590541680",
@@ -35,7 +35,7 @@
     {
       latitude: 47.65295,
       longitude: -122.34255,
-      time: 1589919300000,
+      time: 1592527517000,
       name: "Charlie's Bar",
       address: "3810 Stone Way N, Seattle WA 98103, United States",
       timespan: "1589919300 - 1590519300"
@@ -43,7 +43,7 @@
     {
       latitude:47.627419,
       longitude: -122.292290,
-      time: 1589890920000,
+      time: 1592570717000,
       name: "Cafe Flora",
       address: "E Ward St, Seattle WA 98112, United States",
       timespan: "1589890920 - 1590490920",
@@ -51,7 +51,7 @@
     {
       latitude: 47.615269,
       longitude: -122.318138,
-      time: 1589738400000,
+      time: 1592577917000,
       name: "1110 E Pine St",
       address: "1110 E Pine St, Seattle WA 98122, United States",
       timespan: "1589738400 - 1590338400"
@@ -59,7 +59,7 @@
     {
       latitude: 47.615269,
       longitude: -122.318138,
-      time: 1589826840000,
+      time: 1592613917000,
       name: "1110 E Pine St",
       address: "1110 E Pine St, Seattle WA 98122, United States",
       timespan: "1589826840 - 1590426840"
@@ -67,7 +67,7 @@
     {
       latitude: 47.615269,
       longitude: -122.318138,
-      time: 1589860800000,
+      time: 1592527517000,
       name: "1110 E Pine St",
       address: "1110 E Pine St, Seattle WA 98122, United States",
       timespan: "1589860800 - 1590460800"
@@ -75,7 +75,7 @@
     {
       latitude: 47.614090,
       longitude: -122.328407,
-      time: 1589796000000,
+      time: 1592657117000,
       name: "1124 Pike St",
       address: "1124 Pike St, Seattle WA 98101, United States",
       timespan: "1589796000 - 1590396000"
@@ -83,7 +83,7 @@
     {
       latitude: 47.616268,
       longitude: -122.309822,
-      time: 1589711100000,
+      time: 1592667917000,
       name: "Trader Joe",
       address: "1700 E Madison St, Seattle WA 98122, United States",
       timespan: "1589711100 - 1590311100"
@@ -91,7 +91,7 @@
     {
       latitude: 47.615269,
       longitude: -122.318138,
-      time: 1590656400000,
+      time: 1592682317000,
       name: "1110 E Pine St",
       address: "1110 E Pine St, Seattle WA 98122, United States",
       timespan: "1589860800 - 1590460800"
@@ -99,17 +99,17 @@
     {
       latitude: 47.614090,
       longitude: -122.328407,
-      time: 1590670800000,
+      time: 1592768717000,
       name: "1124 Pike St",
       address: "1124 Pike St, Seattle WA 98101, United States",
       timespan: "1589796000 - 1590396000"
     },
     {
-      latitude: 47.616268,
-      longitude: -122.309822,
-      time: 1590693788000,
-      name: "Trader Joe",
-      address: "1700 E Madison St, Seattle WA 98122, United States",
+      latitude: 47.672550,
+      longitude: -122.347214,
+      time: 1592855117000,
+      name: "Woodland Park",
+      address: "5500 Phinney Ave N, Seattle, WA 98103, United States",
       timespan: "1589711100 - 1590311100"
     }
   ],

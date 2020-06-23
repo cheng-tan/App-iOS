@@ -83,11 +83,6 @@ class Notification extends Component {
             );
           }
         })}
-        <View style={styles.footer}>
-          <TouchableOpacity onPress={this.props.handleDisplay}>
-            <Text style={styles.dismiss}>DISMISS</Text>
-          </TouchableOpacity>
-        </View>
       </View>
     );
   }
